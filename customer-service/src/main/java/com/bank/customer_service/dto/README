@@ -1,0 +1,61 @@
+1️⃣ CustomerRequestDTO
+❓ Why we added it
+
+We never accept Entity objects directly from API requests.
+
+🚨 Problem if not used
+
+Exposes DB structure to clients
+
+Security risk
+
+Tight coupling
+
+Hard to change DB later
+
+✅ What this class does
+
+Represents input data from client
+
+Holds only required fields
+
+Performs validation
+
+📌 Example
+@NotBlank
+@Email
+private String email;
+
+
+✔ Prevents invalid data from entering system
+✔ Automatically validated by Spring
+
+🗣 Interview Answer
+
+DTO separates API contract from database model and enables validation.
+
+2️⃣ CustomerResponseDTO
+❓ Why we added it
+
+We control what data goes back to client.
+
+🚨 Problem if not used
+
+Client sees internal fields
+
+Hard to hide sensitive info
+
+Poor API design
+
+✅ What it does
+
+Sends clean response
+
+Avoids exposing unnecessary fields
+
+Helps versioning later
+
+🗣 Interview Answer
+
+Response DTO ensures controlled and stable API responses.
+

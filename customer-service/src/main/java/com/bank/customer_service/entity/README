@@ -1,0 +1,18 @@
+3️⃣ Customer Entity
+❓ Why we added it
+
+This represents the database table.
+
+✅ What it does
+
+Maps Java object → DB table
+
+Managed by JPA/Hibernate
+
+📌 Annotations
+@Entity
+@Table(name = "customers")
+
+🗣 Interview Answer
+
+Entity represents persistent data and is managed by ORM.

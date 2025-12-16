@@ -1,0 +1,46 @@
+5️⃣ CustomerService (Interface)
+❓ Why interface?
+
+Loose coupling
+
+Easy testing
+
+Future flexibility
+
+🚨 Problem without it
+
+Hard to mock
+
+Tight coupling
+
+Poor design
+
+🗣 Interview Answer
+
+Service interface defines business contract independent of implementation.
+
+6️⃣ CustomerServiceImpl
+❓ Why service layer?
+
+Business logic must NOT be in controller.
+
+🚨 Problem if logic in controller
+
+Fat controllers
+
+Hard to test
+
+Code duplication
+
+✅ What it does
+
+Validates business rules
+
+Handles transformations
+
+Calls repository
+
+🗣 Interview Answer
+
+Service layer contains business rules and ensures separation of concerns.
+

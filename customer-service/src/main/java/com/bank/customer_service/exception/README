@@ -1,0 +1,56 @@
+8️⃣ BusinessException
+❓ Why custom exception?
+
+Not all errors are technical errors.
+
+Examples:
+
+Email already exists
+
+Account closed
+
+Insufficient balance
+
+🗣 Interview Answer
+
+Custom exceptions represent domain-specific business errors.
+
+9️⃣ GlobalExceptionHandler
+❓ Why we added it
+
+Centralized error handling.
+
+🚨 Problem without it
+
+Try-catch everywhere
+
+Inconsistent error responses
+
+Messy code
+
+✅ What it does
+
+Catches all exceptions
+
+Formats responses
+
+Improves API consistency
+
+@RestControllerAdvice
+
+🗣 Interview Answer
+
+Centralized exception handling improves maintainability and API consistency.
+
+🔟 Validation Annotations
+❓ Why?
+
+Prevent bad data at entry point.
+
+Example
+@Valid @RequestBody
+
+🗣 Interview Answer
+
+Validation ensures data integrity before business logic execution.
+

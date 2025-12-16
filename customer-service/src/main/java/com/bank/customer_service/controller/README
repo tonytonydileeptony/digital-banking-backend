@@ -1,0 +1,23 @@
+7️⃣ CustomerController
+❓ Why controller?
+
+Acts as entry point for HTTP requests.
+
+🚨 Controller should NOT:
+
+❌ contain business logic
+❌ contain DB logic
+
+✅ What it does
+
+Accepts request
+
+Triggers validation
+
+Calls service
+
+Returns response
+
+🗣 Interview Answer
+
+Controller handles HTTP layer and delegates logic to service.

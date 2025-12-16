@@ -1,0 +1,27 @@
+4️⃣ CustomerRepository
+❓ Why we added it
+
+To separate DB logic from business logic.
+
+🚨 Problem if not used
+
+SQL inside controller/service
+
+Hard to test
+
+Poor maintainability
+
+✅ What it does
+
+Handles DB operations
+
+Provides CRUD methods
+
+Supports custom queries
+
+boolean existsByEmail(String email);
+
+🗣 Interview Answer
+
+Repository abstracts data access and promotes clean architecture.
+
