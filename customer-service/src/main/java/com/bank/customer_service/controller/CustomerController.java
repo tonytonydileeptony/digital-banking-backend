@@ -10,6 +10,7 @@ public class CustomerController {
 
     @PostMapping
     public String createCustomer() {
+
         return "Customer created successfully";
     }
 }
