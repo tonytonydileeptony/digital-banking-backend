@@ -59,3 +59,17 @@ Helps versioning later
 
 Response DTO ensures controlled and stable API responses.
 
+6️⃣ DTO Mapping for Lists
+❓ Why?
+
+Entities should NOT go to client.
+
+✅ What we do
+
+Convert entity list → DTO list
+
+Prevent leakage of DB model
+
+🗣 Interview Answer
+
+DTO mapping ensures clean separation between persistence and API layers.

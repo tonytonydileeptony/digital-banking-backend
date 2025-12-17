@@ -6,6 +6,30 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
+/*4️⃣ Database Indexing (VERY IMPORTANT)
+❓ Why index?
+
+Search on large tables without index = slow full table scan.
+
+❌ Without index
+O(n) scan
+
+✅ With index
+O(log n) lookup
+
+📌 Entity
+@Column(unique = true)
+private String email;
+
+
+or
+
+@Table(
+  indexes = {
+    @Index(name = "idx_email", columnList = "email")
+  })
+  Indexing improves query performance on frequently searched columns.
+  */
 @Table(
         name = "customers",
         indexes = {

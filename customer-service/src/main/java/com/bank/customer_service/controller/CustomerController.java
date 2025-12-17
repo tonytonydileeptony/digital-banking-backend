@@ -34,6 +34,7 @@ public class CustomerController {
     }
 
     @Operation(summary = "Get all customers with pagination")
+    //Combining pagination and search supports scalable data retrieval.
     @GetMapping
     public ResponseEntity<ApiResponse<Page<CustomerResponseDTO>>> getAllCustomers(
             @RequestParam(defaultValue = "0") int page,

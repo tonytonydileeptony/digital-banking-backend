@@ -11,6 +11,22 @@ import java.util.Map;
 
 @RestControllerAdvice
 public class GlobalExceptionHandler {
+    /*Updated Global Exception Handling
+❓ Why enhance it?
+
+Better error messages.
+
+Example
+{
+  "success": false,
+  "message": "Customer not found",
+  "timestamp": "2025-01-01T10:00:00"
+}
+
+🗣 Interview Answer
+
+Standard error handling improves API consistency and debugging.
+*/
 
     @ExceptionHandler(MethodArgumentNotValidException.class)
     public ResponseEntity<ApiResponse<Map<String, String>>> handleValidation(
